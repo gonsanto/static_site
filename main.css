@@ -15,7 +15,7 @@ body {
     display: flex;
     height: 84px;
     min-width: auto;
-    width: 1920px;
+    width: stretch;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +86,7 @@ body {
     padding: 300px 150px 200px;
 }
 
-.Heading {
+h1 {
     height: 457px;
     width: 548px;
 }
@@ -113,7 +113,7 @@ body {
 
 .btn-see_our_work {
     border: none;
-    font-weight: 70;
+    font-weight: 700;
     color: white;
     background-color: rgba(2, 14, 53, 1);
     text-decoration: none;
@@ -122,6 +122,7 @@ body {
     width: 197px;
     height: 71px;
     box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+    font-family: Merriweather;
 }
 
 .illustration {
@@ -166,7 +167,7 @@ body {
 
 .Headline {
     height: 124px;
-    width: 428px;
+    width: fit-content;
     font-weight: 700;
     font-size: 54px;
     line-height: 62px;
@@ -175,14 +176,11 @@ body {
 }
 
 .displaced_highlight {
-    display: inline-grid;
-    background-color: #FF5678;
-    height: 33px;
-    line-height: 0px;
-    width: stretch;
+    background: linear-gradient(180deg, transparent, 53%, #FF5677 50%);
+    padding-right: 10px;
 }
 
-.paragraph {
+p {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -236,7 +234,7 @@ body {
 .things_we_enjoy {
     display: flex;
     position: relative;
-    height: 708px;
+    height: 792px;
     flex-flow: row;
     justify-content: space-between;
     padding: 100px 150px;
@@ -271,8 +269,6 @@ body {
 .zero {
     line-height: 72px;
 }
-
-
 
 .number {
     width: 83px;
@@ -309,6 +305,44 @@ body {
     border-radius: 1000px;
     background: rgba(255, 238, 246, 1);
     z-index: -1;
-    left: -200px;
-    top: 187px;
+    left: -211px;
+    bottom: -65px;
+}
+
+.craft_experience {
+    display: flex;
+    height: 870px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 150px 100px;
+}
+
+.heading1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 503px;
+    width: 664px;
+}
+
+.headline1 {
+    font-weight: 700;
+    font-size: 54px;
+    color: rgba(2, 14, 53, 1);
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.illustration3 {
+    height: 670px;
+    width: 780px;
+    border-radius: 1000px;
+    opacity: 0.825;
+    object-fit: cover;
+}
+
+.craft_txt {
+    width: 481px;
 }
