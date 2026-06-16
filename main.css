@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Merriweather;
 }
 
 body {
@@ -10,16 +11,19 @@ body {
 }
 
 .nav_bar {
+
     display: flex;
     height: 84px;
-    /*
-        max-width: 1920px; 
-    */
+    min-width: auto;
+    width: 1920px;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 8px 20px 5px rgba(0, 0, 0, 0.08);
     padding: 8px 150px;
+    background-color: white;
+    position: fixed;
+    z-index: 3;
 }
 
 .logo_image {
@@ -33,12 +37,10 @@ body {
 .Btn-contact_us {
     border: none;
     font-weight: 700;
-    font-style: bold;
     color: white;
     background-color: rgba(2, 14, 53, 1);
     text-align: center;
     text-decoration: none;
-    font-family: Merriweather;
     line-height: 20px;
     font-size: 16px;
     width: 185px;
@@ -54,7 +56,6 @@ body {
 }
 
 .txt {
-    font-family: Merriweather;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -63,7 +64,6 @@ body {
 }
 
 .underlying {
-    font-family: Merriweather;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -94,8 +94,6 @@ body {
 .tagline {
     width: 548px;
     height: 330px;
-    font-family: Merriweather;
-    font-style: black;
     color: rgba(43, 43, 43, 1);
     font-weight: 900;
     font-size: 76px;
@@ -115,11 +113,10 @@ body {
 
 .btn-see_our_work {
     border: none;
-    font-weight: 700;
+    font-weight: 70;
     color: white;
     background-color: rgba(2, 14, 53, 1);
     text-decoration: none;
-    font-family: Merriweather;
     line-height: 23px;
     font-size: 18px;
     width: 197px;
@@ -139,19 +136,6 @@ body {
 
 /* "Powered by" */
 
-.content {
-    height: 435px;
-    width: 517px;
-    letter-spacing: 0%;
-}
-
-.heading {
-    height: 304px;
-    width: 517px;
-    margin-bottom: 60px;
-    font-family: Merriweather;
-}
-
 .powered_by {
     display: flex;
     height: 708px;
@@ -160,16 +144,27 @@ body {
     padding: 100px 150px 100px;
 }
 
+.content {
+    height: 435px;
+    width: 517px;
+}
+
+.heading {
+    height: 304px;
+    width: 517px;
+    margin-bottom: 60px;
+}
+
 .illustration2 {
     object-fit: cover;
-    object-view-box: inset object-position:;
+    object-view-box: inset;
     height: 508px;
     width: 592px;
     border-radius: 200px;
     opacity: 0.825;
 }
 
-.title {
+.Headline {
     height: 124px;
     width: 428px;
     font-weight: 700;
@@ -184,14 +179,13 @@ body {
     background-color: #FF5678;
     height: 33px;
     line-height: 0px;
+    width: stretch;
 }
 
 .paragraph {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    font-weight: 517px;
-    height: 138px;
 }
 
 .btn {
@@ -199,8 +193,6 @@ body {
     width: 460px;
     display: flex;
     align-items: center;
-    place-content: start;
-    display: inline-flex
 }
 
 .play_button {
@@ -218,7 +210,6 @@ body {
 
     height: 23px;
     width: 120px;
-    font-family: Merriweather;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -229,15 +220,95 @@ body {
     justify-content: start;
     border: none;
     font-weight: 700;
-    font-style: bold;
     color: white;
     background-color: rgba(2, 14, 53, 1);
     text-decoration: none;
-    font-family: Merriweather;
     line-height: 23px;
     font-size: 18px;
     width: 185px;
     height: 71px;
     box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
     margin-right: 64px;
+}
+
+/* Things we enjoy */
+
+.things_we_enjoy {
+    display: flex;
+    position: relative;
+    height: 708px;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 100px 150px;
+}
+
+.left_side {
+    height: 592px;
+    width: 545px;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 54px;
+    color: rgba(2, 14, 53, 1);
+    height: fit-content;
+    width: fit-content;
+}
+
+.bullet_point {
+    height: 410px;
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.point {
+    display: flex;
+    gap: 40px;
+}
+
+.zero {
+    line-height: 72px;
+}
+
+
+
+.number {
+    width: 83px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(2, 14, 53, 1);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+
+.right_side {
+    padding-top: 91px;
+    height: 410px;
+    width: 543px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.disk {
+    position: absolute;
+    width: 780px;
+    height: 670px;
+    border-radius: 1000px;
+    background: rgba(255, 238, 246, 1);
+    z-index: -1;
+    left: -200px;
+    top: 187px;
 }
