@@ -6,7 +6,6 @@
         margin: 0;
         box-sizing: border-box;
         font-family: Merriweather;
-        max-width: 1920px;
         place-self: center;
     }
 
@@ -411,10 +410,6 @@
         padding: 4px;
     }
 
-    .image_left {}
-
-    .image_right {}
-
     .frame1 {
         background: linear-gradient(#FF5677 50%);
         color: rgba(255, 255, 255);
@@ -451,4 +446,105 @@
         grid-row: 4;
         grid-column: 2 / 4;
     }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1280px;
+        gap: 100px;
+        padding: 100px 150px;
+    }
+
+    .testimonial .heading {
+        gap: 20px;
+
+    }
+
+    .heading .title {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+
+    .head-title {
+        font-size: 54px;
+        line-height: 72px;
+        font-weight: 700;
+    }
+
+    .frame2 {
+        display: flex;
+        height: 672px;
+        gap: 32px;
+    }
+
+    .testimonial .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 412px;
+        height: 555px;
+        border-radius: 150px;
+        padding: 60px 79.5px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        color: none;
+    }
+
+    .role {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .testimonial .photo {
+        height: 150px;
+        width: 150px;
+        margin: 0;
+    }
+
+    .star {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .star svg {
+        height: 27px;
+        width: 29px;
+        fill: rgba(255, 193, 7, 1);
+    }
+
+    .star svg path {}
+
+    .testimonial .card--hover {
+        height: 672px;
+        width: 460px;
+        padding: 130px 40px;
+    }
+
+    .testimonial .name {
+        gap: 6px;
+    }
+
+    .icon-arrows {
+        display: flex;
+        gap: 1460px;
+    }
+
+    .icon-arrows img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .right-arrow {
+        rotate: 180deg;
+    }
+
+
 }
