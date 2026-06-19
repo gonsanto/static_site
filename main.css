@@ -19,19 +19,8 @@
         font-size: 16px;
         line-height: 20px;
         color: #020E35;
-        height: 28px;
         align-content: center;
         text-decoration: none;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        height: fit-content;
-        width: fit-content;
     }
 
     img {
@@ -43,6 +32,12 @@
         font-size: 18px;
         line-height: 23px;
         color: rgba(2, 14, 53, 1);
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 150px
     }
 }
 
@@ -64,25 +59,22 @@
     .nav_menu {
         display: flex;
         gap: 60px;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100%;
     }
 }
 
 @layer composants {
     .logo_image {
-        height: 40px;
+        height: 41px;
         width: 127.87px;
     }
 
+    .menu_txt {
+        padding-bottom: 8px;
+        text-transform: uppercase;
+    }
+
     .underlying {
-        font-size: 16px;
-        line-height: 20px;
-        height: 28px;
-        border-bottom: solid;
-        border-bottom-color: #FF5678;
-        border-bottom-width: 4px;
+        border-bottom: 4px solid #FF5677;
     }
 
     button {
@@ -97,12 +89,11 @@
         box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
     }
 
-    .Btn-contact_us {
+    .btn-contact_us {
         box-shadow: none;
         line-height: 20px;
         font-size: 16px;
         width: 185px;
-        height: 100%;
     }
 
     .highlighted_txt {
@@ -139,6 +130,7 @@
     .headline {
         font-size: 54px;
         line-height: 72px;
+        font-weight: 700;
     }
 
     .heading {
@@ -262,11 +254,8 @@
 }
 
 @layer sections {
-    .hero_section {
-        display: flex;
-        height: 1008px;
+    .hero {
         flex-flow: row;
-        justify-content: space-between;
         align-items: center;
         padding: 300px 150px 200px;
     }
@@ -291,19 +280,12 @@
     }
 
     .powered_by {
-        display: flex;
-        height: 708px;
         flex-flow: row;
-        justify-content: space-between;
-        padding: 100px 150px 100px;
     }
 
     .powered_by .content {
-        display: grid;
-        height: 435px;
         width: 517px;
-        flex-direction: column;
-        justify-content: space-between
+        align-self: start;
     }
 
     .illustration2 {
@@ -312,24 +294,19 @@
         border-radius: 200px;
     }
 
-    .btn {
+    .btns {
         display: flex;
         align-items: center;
     }
 
     .watch_video {
         height: 23px;
-        width: 120px;
         font-weight: 700;
         line-height: 28px;
     }
 
     .things_we_enjoy {
-        display: flex;
         position: relative;
-        height: 792px;
-        justify-content: space-between;
-        padding: 100px 150px;
     }
 
     .things_we_enjoy .disk {
@@ -388,11 +365,7 @@
     }
 
     .craft_experience {
-        display: flex;
-        height: 870px;
-        justify-content: space-between;
         align-items: center;
-        padding: 100px 150px 100px;
     }
 
     .illustration3 {
@@ -412,11 +385,8 @@
     }
 
     .our_team {
-        display: flex;
-        height: 1485px;
         flex-direction: column;
         align-items: center;
-        padding: 100px 150px 100px;
     }
 
     .our_team .displaced_highlight {
@@ -432,12 +402,8 @@
     }
 
     .previous_work {
-        display: flex;
-        height: 1943px;
         flex-direction: column;
-        align-items: center;
         gap: 60px;
-        padding: 100px 150px;
     }
 
     .slide_menu {
@@ -493,25 +459,16 @@
     }
 
     .testimonial {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 1280px;
-        padding: 100px 150px;
+        gap: 100px;
     }
 
     .testimonial .heading {
+        width: 369px;
         gap: 20px;
         display: flex;
         flex-direction: column;
         margin: 0;
-    }
-
-    .testimonial .title {
-        display: flex;
-        font-size: 28px;
-        line-height: 36px;
-        font-weight: 700;
     }
 
     .head-title {
@@ -552,13 +509,6 @@
         gap: 6px;
     }
 
-    .Contact_Us {
-        display: flex;
-        justify-content: space-between;
-        height: 1104px;
-        padding: 100px 150px;
-    }
-
     .contact_us {
         display: flex;
         flex-wrap: wrap;
@@ -576,10 +526,6 @@
         display: grid;
         width: 656px;
         gap: 40px;
-    }
-
-    .heading .headline {
-        font-weight: 700;
     }
 
     .contact_us .heading {
@@ -602,12 +548,6 @@
         padding: 4px;
     }
 
-    form p {
-        line-height: 23px;
-        font-size: 18px;
-        width: fit-content;
-    }
-
     .message_box .card {
         height: 200px;
     }
@@ -616,23 +556,12 @@
         width: 205px;
     }
 
-    .newsletter {
-        display: flex;
-        justify-content: space-between;
-        height: 870px;
-        padding: 100px 150px;
-    }
-
     .footer {
-        display: flex;
         position: relative;
         flex-wrap: wrap;
-        padding-top: 100px;
-        height: 511px;
+        padding: 100px 0 0;
         gap: 60px;
     }
-
-
 
     .info {
         display: flex;
@@ -671,14 +600,12 @@
         gap: 16px;
         text-align: start;
         width: fit-content;
+        height: fit-content;
     }
-
-
 
     .info .title {
         font-size: 20px;
         line-height: 24px;
-
     }
 
     .frame3 .text {
@@ -721,7 +648,6 @@
         z-index: -1;
         height: 524px;
         width: 609px;
-
     }
 
     .left {
