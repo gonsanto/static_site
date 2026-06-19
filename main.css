@@ -20,6 +20,8 @@
         line-height: 20px;
         color: #020E35;
         height: 28px;
+        align-content: center;
+        text-decoration: none;
     }
 
     h1,
@@ -620,3 +622,115 @@
         height: 870px;
         padding: 100px 150px;
     }
+
+    .footer {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        height: 511px;
+        gap: 60px;
+    }
+
+
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        height: 269px;
+        width: 100%;
+        padding: 0px 100px;
+    }
+
+    .frame3 {
+        display: grid;
+        width: fit-content;
+        gap: 32px;
+    }
+
+    .social_media_icon {
+        height: 51px;
+        width: 409.8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social_media_icon svg {
+        fill: rgba(2, 14, 53, 1);
+    }
+
+    .infos {
+        gap: 17px;
+        display: grid;
+        align-self: start;
+    }
+
+    .info .text {
+        display: grid;
+        font-size: 14px;
+        gap: 16px;
+        text-align: start;
+        width: fit-content;
+    }
+
+
+
+    .info .title {
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+
+    .frame3 .text {
+        width: 148px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .frame3 .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .info .logo_image {
+        height: 42px;
+    }
+
+    .terms {
+        background: rgba(2, 14, 53, 1);
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 150px;
+        height: 82px;
+        width: 100%;
+    }
+
+    .terms a {
+        font-family: Inter;
+        font-size: 14px;
+        color: white;
+    }
+
+    .right_side--footer {
+        gap: 60px;
+        display: flex;
+    }
+
+    .footer .disk {
+        position: absolute;
+        z-index: -1;
+        height: 524px;
+        width: 609px;
+
+    }
+
+    .left {
+        top: -27px;
+        left: -105px;
+    }
+
+    .right {
+        top: -39px;
+        right: -112px;
+    }
+}
