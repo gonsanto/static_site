@@ -151,6 +151,7 @@
     }
 
     .card {
+        display: grid;
         height: 519px;
         width: 519px;
         border-radius: 50px;
@@ -559,9 +560,8 @@
     .contact_us {
         display: flex;
         flex-wrap: wrap;
-        align-content: space-between;
         width: 656px;
-        height: 904px;
+        gap: 100px;
     }
 
     .Contact_Us .displaced_highlight {
@@ -580,10 +580,14 @@
         font-weight: 700;
     }
 
-    .Contact_Us .heading {
+    .contact_us .heading {
         height: 144px;
         margin: 0px;
         flex: none;
+    }
+
+    .text_block .heading {
+        margin: 0;
     }
 
     .contact .card {
@@ -606,8 +610,13 @@
         height: 200px;
     }
 
-    .Contact_Us button {
-        height: 71px;
+    .btn-send {
         width: 205px;
     }
-}
+
+    .newsletter {
+        display: flex;
+        justify-content: space-between;
+        height: 870px;
+        padding: 100px 150px;
+    }
